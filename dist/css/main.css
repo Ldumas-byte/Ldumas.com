@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+#mu
+{
+  font-family: 'Open Sans', sans-serif;
+}
+header {
+  height: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgba(40, 187, 212, 0.747);
+  color: rgba(26, 33, 138, 0.76);
+  padding: 0 .5rem 0 1rem;
+}
+
+footer {
+  height: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgba(165, 3, 3, 0.801);
+  color: black;
+  padding: 1rem 1rem;
+  border: solid black;
+  text-align: center;
+  display: block;
+  
+}
+
+h1
+{
+  font: italic small-caps bold 26px/2 cursive;
+}
+
+p
+{
+  text-align: start;
+  font-style: oblique 40deg;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  padding: 0;
+  margin: 0;
+  background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/bush.png");
+    }
+
+header .logo {
+  line-height: 50px;
+  font-weight: bold;
+}
+
+nav {
+  float: left;
+}
+
+address {
+  float: center;
+}
+
+nav ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav ol li{
+  display: inline;
+}
+
+nav ol li a,
+nav ol li a:link,
+nav ol li a:visited{
+  display: inline-block;
+  padding: 0 .5rem;
+  color: rgb(0, 0, 0);
+  line-height: 50px;
+  text-decoration: none;
+}
+
+nav ol li a:hover{
+  background: rgba(12, 201, 12, 0.808);
+}
+
+main {
+  margin: 0 auto;
+  width: 960px;
+  max-width: 100%;
+}
+img {
+  border-radius: 50%; 
+  position: relative;
+ 
+}
+#alpha
+{ 
+  background-color: rgba(159, 236, 213, 0.726);
+  border-width: thin;
+  border: solid #7a18bbb0
+    }
+
+#beta
+{ 
+  background-color: rgba(159, 236, 213, 0.726);
+  border-width: thin;
+  border: solid #990808
+    }
+  
+#gamma
+{ 
+  background-color: rgba(159, 236, 213, 0.726);
+  border-width: thin;
+  border: solid #32a1ce
+    }
+
+#lambda
+{
+  text-align: start;
+  font-style: oblique 40deg;
+}
+
+#nu
+{
+  text-align: justify;
+}
+
+#jesus
+{
+  font: 1.2em "Fira Sans", sans-serif;
+  font-style: normal;
+  text-align: center;
+}
+
+#toggleMenu {
+  display: none;
+}
+
+@media only screen and (max-width: 960px)  {
+
+  #toggleMenu {
+      display: block;
+      float: right;
+      line-height: 50px;
+  }
+
+  header {
+      position: relative;
+  }
+
+  nav {
+      position: absolute;
+      display: none;
+      background: rgba(40, 187, 212, 0.747);
+      top: 50px;
+      left: 0;
+      right: 0;
+    }
+
+  nav ul li a,
+  nav ul li a:link,
+  nav ul li a:visited{
+      display: block;
+      border-bottom: 1px solid #777;
+  }
+
+}
+/*# soorceMappingURL=main.css.map *rgba(219, 194, 217, 0.623);rgba(199, 198, 198, 0.637);/

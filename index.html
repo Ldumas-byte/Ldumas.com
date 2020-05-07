@@ -1,70 +1,79 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
+    <title>Welcome</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
+   <link rel="stylesheet" href="dist/css/main.css">
   </head>
       
-  <body>
+  <body id="mu">
 
     <header>
+      <a id="toggleMenu">Menu<a></a>
+      <nav>
 
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ol class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            <li class="nav-item active">
-              <a class="nav-link" href="resume.html">Resume</a>
+        <div>
+          <ol>
+            <li>
+              <a href="index.html">Home</a>
+            <li>
+              <a href="resume.html">Resume</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
+            <li>
+              <a href="about me.html">About me</a>
             </li>
           </ol>
       </div>
+      
       </nav>
           
     </header>
-   <main>
-     
-      <p>A link to my <a href="https://www.mozilla.org/" title="The Mozilla homepage" target="_blank">favorite website</a>.</p>
-    <img
-      style="border-radius: 50%; float: right; margin-right: 1em;"
-      class="avatar"
-      src="https://media-exp1.licdn.com/dms/image/C4D03AQG5zfzosqzTSg/profile-displayphoto-shrink_200_200/0?e=1593648000&v=beta&t=fE7O5pq6ttnWxPP6CCJgAHN1RyU9fTCZY2VSIOZCPhU" alt="My Avatar"
-      alt="Dev profile pic"
-    >
+    <img src="https://media-exp1.licdn.com/dms/image/C4D03AQG5zfzosqzTSg/profile-displayphoto-shrink_200_200/0?e=1594252800&v=beta&t=sA3jP9DbS67hlFFUJJUR6j-Pw-bfa6CS2gJz-8h7Mgc"
+    alt="Lamarr Dumas">
   
+   <article id="jesus">
+    
+    I'm Lamarr Dumas.
+    Welcome to my personal portfolio website.
+    This website will help guide any business professional on my background and personal achievements.
+    My goal is to connect myself with employers seeking upcoming web developers like myself.
+    I found that making a website for me is the best way to express myself. 
+    I was inspired to make this site as a project as a final project for my web development course at Micro-train.
+    This is show my skills off in making a website using HTML and my own custom CSS. 
+    My mission was to web design using the base tool of CSS so I can see how far I can go without using things like bootstrap.
+    For the time being, this is a W.I.P, so things aren't too pretty. 
+    However, I want to improve more on this site in the future due to how fun it was.
+    I'll get rid of my restriction bootstrap in the future and I'll try my hand using Javascript as well.
+     
+   </article>
 
+  
+  
+   <footer>
+          <address>
+    Email: dumaslamarr@gmail.com Address: 1264 South Saint Louis ave<br>
+    Phone: 773-868-7971
+    Github:<a href="https://github.com/Ldumas-byte">Ldumas-byte</a> <br>
+    <a href="https://www.linkedin.com/in/lamarr-dumas-a668a1125/">Linkedin</a> 
+      <a href="https://my.indeed.com/p/lamarrd-c3aut44">Indeed</a>
+    
+          </address>
+  </footer>
 
-  <p>I'm Lamarr Dumas. I am writing you to express my sincere interest in applying for the position your company is seeking to fill.  I’m confident that my customer service experience and professional skill set is exactly what you’re looking for in a candidate. I am a former college student who recently got their Basic certificate in Medical Billing from Malcolm X College during spring 2019. I enjoy learning; however, I decided to put attending school on hold, for a while, to focus more on finding variable work experience.
-  My highlighted soft skills include;
-      • Experience being patient employee who is willing to adapt to my work environment. 
-      • Understanding how strict business environments.
-      •  Holding specialize skills like sorting papers, storing files, and multitasking.
-  At your convenience I would like to meet with a representative from your company to further discuss my skills and knowledge.
-</p>
-</main>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script>
+
+    var toggleMenu = document.getElementById('toggleMenu');
+    var nav = document.querySelector('nav');
+    toggleMenu.addEventListener(
+      'click',
+      function(){
+        if(nav.style.display=='block'){
+          nav.style.display='none';
+        }else{
+          nav.style.display='block';
+        }
+      }
+    );
+  </script>
   </body>
-  <style>
-    body {
-      background-color: rgba(122, 105, 151, 0.623);
-    }
-    </style>
 </html>
